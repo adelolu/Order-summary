@@ -1,0 +1,131 @@
+@import "nomalize";
+@import "colors";
+
+body {
+  width: 100%;
+  height: 100%;
+}
+main {
+  background-color: $paleBlue;
+  padding: 40px 7% ;
+  height: inherit;
+  display: flex;
+ justify-content: space-evenly;
+  .card {
+    border-radius: 16px;
+    height: auto;
+    background-color: white;
+    max-width: 375px;
+    min-width: 300px;
+  }
+  .hero-image {
+    img {
+      border-radius: 16px 16px 0 0;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.summary {
+  width: inherit;
+  padding: 9%;
+  font-family: "Red Hat Display", sans-serif;
+
+  .order-sum {
+    font-weight: 900;
+    font-size: 24px;
+    color: $darkBlue;
+    text-align: center;
+  }
+  .text {
+    font-size: 500;
+    font-size: 16px;
+    color: $desaturatedBlue;
+    text-align: justify;
+    line-height: 22px;
+  }
+  .plan {
+    background-color: $vPaleBlue;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+    justify-content: space-between;
+  }
+  .plan-amount {
+    margin-top: 5%;
+    margin-left: 15%;
+  }
+  .change-link {
+    margin-top: 5%;
+    a {
+      color: $brightBlue;
+      font-weight: 700;
+      font-size: 10px;
+
+      &:hover {
+        color: $paleHoverBlue;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .order-btn {
+    margin-top: 20px;
+  }
+  .order-btn {
+      width: inherit;
+
+    button {
+      background-color: $brightBlue;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      padding: 6%;
+      display: block;
+      color: $vPaleBlue;
+      font-weight: 700;
+      width: 100%;
+      box-shadow: 0px 2px 30px $desaturatedBlue;
+
+      &:hover{
+      background-color: $paleHoverBlue
+          
+      }
+    }
+
+    .cancel-order{
+        font-weight: 700;
+        color: $desaturatedBlue;
+        text-align: center;
+        padding-top: 20px;
+    }
+  }
+}
+.aPlan {
+  width: 100px;
+  font-weight: 700;
+  color: $darkBlue;
+  font-size: 14px;
+}
+.amount {
+  color: $desaturatedBlue;
+  margin-top: 5px;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.attribution{
+    margin-top: 20px;
+    font-size: 16px;
+    // margin-left: -5px;
+}
+
+@media only screen and (min-width: 762px) {
+  main{
+      background-image: url("../images/pattern-background-desktop.svg");
+      background-repeat: no-repeat;
+      background-size: 100% 48%;
+  }
+  }
